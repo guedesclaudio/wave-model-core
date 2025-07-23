@@ -1,0 +1,67 @@
+# Python Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build Files
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuration Files
+*.ini
+*.cfg
+
+# Logs and Caches
+*.log
+*.cache
+
+# Test Results
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Pytest Results
+.cache/
+
+# Editor Files (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
+# Sensitive Files
+.env
+.env.*
+*.pem
+*.key
+*.crt
+teste-local.csv
+todo
