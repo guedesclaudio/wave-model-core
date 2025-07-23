@@ -19,7 +19,7 @@ async def create_profiles(
     try:
         result = service.create_profiles_from_csv(request.filename, request.wave_data_file_name)
         return {
-            "message": "Perfis criados com sucesso",
+            "message": "Success",
             "data": result
         }
     except Exception as e:
