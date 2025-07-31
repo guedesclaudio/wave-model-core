@@ -17,7 +17,7 @@ async def create_profiles(
     service: CreateBeachProfileService = Depends(get_create_beach_profile_service)
 ):
     try:
-        result = service.create_profiles_from_csv(request.filename, request.wave_data_file_name)
+        result = service.create_profiles_from_csv(request.profile_file_name, request.wave_data_file_name)
         return {
             "message": "Success",
             "data": result

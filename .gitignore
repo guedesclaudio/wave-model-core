@@ -63,5 +63,6 @@ Thumbs.db
 *.pem
 *.key
 *.crt
+
 teste-local.csv
 todo
