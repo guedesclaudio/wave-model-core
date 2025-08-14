@@ -51,3 +51,4 @@ google-cloud-storage==2.14.0
 python-dotenv>=0.19.0
 minio>=7.2.0
 pandas==2.2.2 
+gunicorn>=21.0
