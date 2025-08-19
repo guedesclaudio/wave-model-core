@@ -36,12 +36,12 @@ jobs:
 
       - name: Update GitOps repository
         run: |
-          git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/guedesclaudio/minio-git-ops.git
-          cd minio-git-ops/base
+          git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/guedesclaudio/wave-model-core-git-ops.git
+          cd wave-model-core-git-ops
 
-          sed -i "s|image: guedesclaudio/wave-model-core:.*|image: guedesclaudio/wave-model-core:${{ steps.version.outputs.version }}|g" wave-model/deployment.yaml
+          sed -i "s|image: guedesclaudio/wave-model-core:.*|image: guedesclaudio/wave-model-core:${{ steps.version.outputs.version }}|g" base/deployment.yaml
 
-          grep "guedesclaudio/wave-model-core" wave-model/deployment.yaml
+          grep "guedesclaudio/wave-model-core" base/deployment.yaml
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
