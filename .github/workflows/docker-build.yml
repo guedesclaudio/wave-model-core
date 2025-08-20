@@ -56,7 +56,7 @@ jobs:
           username: root
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /root/msc/minio-git-ops
+            cd /root/msc/wave-model-core-git-ops
             git pull origin main
             cd base
             kubectl apply -f .
