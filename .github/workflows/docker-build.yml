@@ -36,7 +36,7 @@ jobs:
 
       - name: Update GitOps repository
         run: |
-          git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/guedesclaudio/wave-model-core-git-ops.git
+          git clone https://${{ secrets.PERSONAL_TOKEN }}@github.com/guedesclaudio/wave-model-core-git-ops.git
           cd wave-model-core-git-ops
 
           sed -i "s|image: guedesclaudio/wave-model-core:.*|image: guedesclaudio/wave-model-core:${{ steps.version.outputs.version }}|g" base/deployment.yaml
